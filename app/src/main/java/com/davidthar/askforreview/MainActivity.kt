@@ -110,6 +110,7 @@ class MainActivity : AppCompatActivity() {
         btnOk.setOnClickListener {
             if(stars>3){
                 rateIntent()
+                dialog.cancel()
             }else dialog.cancel()
         }
 
